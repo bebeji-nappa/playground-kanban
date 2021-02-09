@@ -1,0 +1,50 @@
+{
+  "name": "playground-furima",
+  "version": "0.0.1",
+  "scripts": {
+    "watch": "webpack serve --config ./webpack.config.js",
+    "build": "webpack --progress",
+    "lint": "yarn lint:eslint && yarn lint:prettier",
+    "lint:fix": "yarn lint:eslint:fix && yarn lint:prettier:fix",
+    "lint:prettier": "yarn prettier --check './**/*.{js,ts,vue}'",
+    "lint:prettier:fix": "yarn prettier --write './**/*.{js,ts,vue}'",
+    "lint:eslint": "eslint './**/*.{js,ts,vue}'",
+    "lint:eslint:fix": "eslint --fix './**/*.{js,ts,vue}'"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.13",
+    "@babel/preset-env": "^7.12.13",
+    "@types/webpack": "^4.41.26",
+    "@typescript-eslint/eslint-plugin": "^4.15.0",
+    "@typescript-eslint/parser": "^4.15.0",
+    "@vue/compiler-sfc": "^3.0.5",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.2.2",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^5.0.2",
+    "eslint": "^7.19.0",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-plugin-vue": "^7.5.0",
+    "html-webpack-plugin": "^5.0.0",
+    "jest": "^26.6.3",
+    "mini-css-extract-plugin": "^1.3.6",
+    "prettier": "^2.2.1",
+    "sass": "^1.32.7",
+    "sass-loader": "^11.0.1",
+    "style-loader": "^2.0.0",
+    "ts-loader": "^8.0.16",
+    "typescript": "^4.1.3",
+    "uikit": "^3.6.16",
+    "vue-loader-v16": "^16.0.0-beta.5.4",
+    "vue-router": "^4",
+    "vue-template-compiler": "^2.6.12",
+    "webpack": "^5.21.2",
+    "webpack-assets-manifest": "^5.0.1",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2",
+    "webpack-manifest-plugin": "^3.0.0"
+  },
+  "dependencies": {
+    "vue": "^3.0.5"
+  }
+}
